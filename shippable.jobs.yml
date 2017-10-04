@@ -8,6 +8,24 @@ jobs:
       - TASK:
         - script: IN/sample-pub/gitRepo/echo.sh
     flags: job1
+
+  - name: runsh-testrepo1pub
+    type: runSh
+    allowPublicAccess: false
+    steps:
+      - IN: testrepo1
+      - TASK:
+        - script: IN/testrepo1/gitRepo/echo.sh
+    flags: testrepo1
+  
+  - name: runsh-testrepo2pub
+    type: runSh
+    allowPublicAccess: false
+    steps:
+      - IN: testrepo2
+      - TASK:
+        - script: IN/testrepo2/gitRepo/echo.sh
+    flags: testrepo2
     
   - name: runcliscript-job-pub
     type: runCLI
