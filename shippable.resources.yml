@@ -6,6 +6,20 @@ resources:
       sourceName: "bell-rc/sample_publicrepo"
       branch: master      
   
+  - name: testrepo1
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: "bell-rc/testrepo1"
+      branch: master
+      
+  - name: testrepo2
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: "bell-rc/testrepo2"
+      branch: master
+      
   - name: sample-scriptpvt
     type: gitRepo
     integration: bitbucket
