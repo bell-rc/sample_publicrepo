@@ -1,16 +1,16 @@
 resources:
   - name: sample-pub
     type: gitRepo
-    integration: bitbucket
+    integration: github
     pointer:
-      sourceName: "shiptest-rc-me/sample-script-pub"
+      sourceName: "bell-rc/sample_publicrepo"
       branch: master      
   
   - name: sample-scriptpvt
     type: gitRepo
     integration: bitbucket
     pointer:
-      sourceName: "shiptest-rc-me/sample-script-pvt"
+      sourceName: "bell-rc/testprivate"
       branch: master
       
   - name: test-trigger01-pub
