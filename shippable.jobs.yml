@@ -27,14 +27,14 @@ jobs:
         - script: IN/testrepo2/gitRepo/echo.sh
     flags: testrepo2
     
-  - name: runcliscript-job-pub
-    type: runCLI
-    allowPublicAccess: true
-    steps:      
-      - IN: sample-scriptpvt
-      - TASK:
-        - script: IN/sample-scriptpvt/gitRepo/echo.sh
-    flags: runcliscript-job-pub
+ # - name: runcliscript-job-pub
+ #   type: runCLI
+ #   allowPublicAccess: true
+ #   steps:      
+ #     - IN: sample-scriptpvt
+ #     - TASK:
+ #       - script: IN/sample-scriptpvt/gitRepo/echo.sh
+ #   flags: runcliscript-job-pub
   
   - name: sample_publicrepo_runCI
     type: runCI
@@ -91,12 +91,12 @@ jobs:
       - TASK:
         - script: ls
     
-  - name: runcliscript-job2-pub
-    type: runCLI
-    steps:      
-      - IN: runcliscript-job-pub
-      - TASK:
-        - script: ls
+ # - name: runcliscript-job2-pub
+ #   type: runCLI
+ #   steps:      
+ #     - IN: runcliscript-job-pub
+ #     - TASK:
+ #       - script: ls
       
   - name: sample-release-pub
     type: release
