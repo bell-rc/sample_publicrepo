@@ -8,10 +8,10 @@ git:
    submodules: false
    
 build:
-  pre_ci_boot:
-    image_name: drydockaarch64/u16pyt
-    image_tag: master
-    pull: true
+#  pre_ci_boot:
+  #  image_name: drydockaarch64/u16pyt
+  #  image_tag: master
+  #  pull: true
     
   ci:
     - python -V
