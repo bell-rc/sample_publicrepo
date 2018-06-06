@@ -17,4 +17,4 @@ build:
     - python -V
     - docker ps
     - docker build -t=test .
-    - docker images
+    - docker images 
