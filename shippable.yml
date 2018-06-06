@@ -11,4 +11,4 @@ build:
     
   ci:
     - python -V
-    - docker ps
+    
