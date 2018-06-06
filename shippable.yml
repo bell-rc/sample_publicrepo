@@ -8,13 +8,7 @@ git:
    submodules: false
    
 build:
-#  pre_ci_boot:
-  #  image_name: drydockaarch64/u16pyt
-  #  image_tag: master
-  #  pull: true
     
   ci:
     - python -V
     - docker ps
-   # - docker build -t=test .
-    - docker images 
