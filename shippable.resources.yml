@@ -20,12 +20,12 @@ resources:
       sourceName: "bell-rc/testrepo2"
       branch: master
       
-  - name: sample-scriptpvt
-    type: gitRepo
-    integration: bitbucket
-    pointer:
-      sourceName: "bell-rc/testprivate"
-      branch: master
+ # - name: sample-scriptpvt
+ #   type: gitRepo
+ #   integration: bitbucket
+ ##   pointer:
+ #     sourceName: "bell-rc/testprivate"
+ #     branch: master
       
   - name: test-trigger01-pub
     type: time
@@ -74,38 +74,38 @@ resources:
     seed:
       versionName: "random-2"
       
-  - name: sample-ddccluster-pub
-    type: cluster
-    integration: ddc
-    pointer:
-      sourceName : "nothing"
+ # - name: sample-ddccluster-pub
+ #   type: cluster
+ #   integration: ddc
+ #   pointer:
+ #     sourceName : "nothing"
   
-  - name: sample-awscluster-pub
-    type: cluster
-    integration: ship-aws
-    pointer:
-      sourceName : "small-cluster"
-      region: "us-east-1"
+ # - name: sample-awscluster-pub
+ #   type: cluster
+  #  integration: ship-aws
+  #  pointer:
+  #    sourceName : "small-cluster"
+  #    region: "us-east-1"
   
-  - name: sample-kubecluster-pub
-    type: cluster
-    integration: "ship-kubernetes"
+ # - name: sample-kubecluster-pub
+ #   type: cluster
+ #   integration: "ship-kubernetes"
   
-  - name: sample-gkecluster-pub
-    type: cluster
-    integration: ship-gke
-    pointer:
-      sourceName: "small-cluster" #name of the cluster we are deploying.
-      region: "us-central1-a"
+ # - name: sample-gkecluster-pub
+ #   type: cluster
+ #   integration: ship-gke
+ #   pointer:
+ #     sourceName: "small-cluster" #name of the cluster we are deploying.
+ #     region: "us-central1-a"
       
-  - name: sample-slack-pub
-    type: notification
-    integration: "notify-slack"
-    pointer:
-      recipients:
-        - "#pipeline-pvt"
-        - "#pipeline-public"
-        - "@shiphitchcock1"
+ # - name: sample-slack-pub
+ #   type: notification
+ #   integration: "notify-slack"
+ #   pointer:
+ #     recipients:
+ #       - "#pipeline-pvt"
+ #       - "#pipeline-public"
+ #       - "@shiphitchcock1"
 
   - name: sample-email-pub
     type: notification
